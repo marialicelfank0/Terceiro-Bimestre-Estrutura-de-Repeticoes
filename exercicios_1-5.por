@@ -95,7 +95,7 @@ programa
     }
 }
 
-5)
+5)A)
 programa
 {
 	
@@ -117,5 +117,38 @@ programa
 		}
 
 		escreva("O resultado da sua potencicao é: ", resultado)
+	}
+}
+
+B)
+programa
+{
+	
+	funcao inicio()
+	{
+		inteiro base, expoente
+		
+		escreva("informe o valor da base: ")
+		leia(base)
+
+		escreva("informe o valor do expoentee: ")
+		leia(expoente)
+
+		potencia(base, expoente)
+
+	}
+
+	funcao potencia(inteiro base, inteiro expoente){
+		inteiro resultado
+
+		resultado = 1
+
+
+		para(inteiro i=0; i < expoente; i++){
+			resultado = resultado * base
+
+		}
+		escreva("resultado: ", resultado)
+		
 	}
 }
